@@ -49,27 +49,37 @@
                     </div>
                     <div data-modal class="backdrop is-hidden">
                         <div class="modal">
-                            <h2 class="form-title" >Оставьте свои данные, мы вам перезвоним</h2>
+                            <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
                             <button data-modal-close class="close-button">
                                 <svg class="close-icon">
                                     <use href="./images/icons.svg#icon-close"></use>
                                 </svg>
                             </button>
                             <form class="hero-form">
-                                <label for="user-name">Имя</label>
-                                <input type="text" name="user-name" id="user-name">
-                                <label for="user-phone">Телефон</label>
-                                <input type="tel" name="user-phone" id="user-phone">
-                                <label for="user-mail">Почта</label>
-                                <input type="email" name="user-mail" id="user-mail">
-                                <label for="user-comment">Комментарий</label>
-                                <textarea name="user-comment" id="user-comment" rows="5" placeholder="Введите текст"></textarea>
-                                <input type="checkbox" id="user-agreement">
-                                <label for="user-agreement">Соглашаюсь с рассылкой и принимаю
-                                    <a href="#">Условия договора</a>
-                                </label>
+                                <div class="form-field">
+                                    <label for="user-name">Имя</label>
+                                    <input type="text" name="user-name" id="user-name">
+                                </div>
+                                <div class="form-field">
+                                    <label for="user-phone">Телефон</label>
+                                    <input type="tel" name="user-phone" id="user-phone">
+                                </div>
+                                <div class="form-field">
+                                    <label for="user-mail">Почта</label>
+                                    <input type="email" name="user-mail" id="user-mail">
+                                </div>
+                                <div class="form-field">
+                                    <label for="user-comment">Комментарий</label>
+                                    <textarea name="user-comment" id="user-comment" rows="5" placeholder="Введите текст"></textarea>
+                                </div>
+                                <div class="form-field">
+                                    <input type="checkbox" id="user-agreement" value="agreement">
+                                    <label for="user-agreement">Соглашаюсь с рассылкой и принимаю
+                                        <a class="agreement-link" href="#">Условия договора</a>
+                                    </label>
+                                </div>
                             </form>
-                            <button type="submit">Отправить</button>
+                            <button class="form-button" type="submit">Отправить</button>
                         </div>
                     </div>
                 </section>
@@ -388,7 +398,10 @@
                     <b class="appeal">Подпишитесь на рассылку</b>
                     <div class="box-form" >
                         <form class="footer-form" >
-                            <input class="form" type="email" name="mail" placeholder="E-mail">
+                            <div class="form">
+                                <label for="mail"></label>
+                                <input type="email" name="mail" id="mail" placeholder="E-mail">
+                            </div>
                         </form>
                         <button class="footer-button" type="submit">Подписаться
                             <svg class="button-icon">

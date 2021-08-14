@@ -50,7 +50,7 @@
                     <div data-modal class="backdrop is-hidden">
                         <div class="modal">
                             <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-                            <button data-modal-close class="close-button">
+                            <button data-modal-close type="button" class="close-button">
                                 <svg class="close-icon">
                                     <use href="./images/icons.svg#icon-close"></use>
                                 </svg>
@@ -58,22 +58,32 @@
                             <form class="hero-form">
                                 <div class="form-field">
                                     <label for="user-name">Имя</label>
-                                    <input type="text" name="user-name" id="user-name">
+                                    <input class="form-input" type="text" name="user-name" id="user-name">
+                                    <svg class="form-icon">
+                                        <use href="../images/icons.svg#icon-person-form"></use>
+                                    </svg>
                                 </div>
                                 <div class="form-field">
                                     <label for="user-phone">Телефон</label>
-                                    <input type="tel" name="user-phone" id="user-phone">
+                                    <input class="form-input" type="tel" name="user-phone" id="user-phone">
+                                    <svg class="form-icon">
+                                        <use href="../images/icons.svg#icon-phone-form"></use>
+                                    </svg>
                                 </div>
                                 <div class="form-field">
                                     <label for="user-mail">Почта</label>
-                                    <input type="email" name="user-mail" id="user-mail">
+                                    <input class="form-input" type="email" name="user-mail" id="user-mail">
+                                    <svg class="form-icon">
+                                        <use href="../images/icons.svg#icon-email-form"></use>
+                                    </svg>
                                 </div>
                                 <div class="form-field">
                                     <label for="user-comment">Комментарий</label>
-                                    <textarea name="user-comment" id="user-comment" rows="5" placeholder="Введите текст"></textarea>
+                                    <textarea name="user-comment" id="user-comment" rows="10" placeholder="Введите текст"></textarea>
                                 </div>
-                                <div class="form-field">
-                                    <input type="checkbox" id="user-agreement" value="agreement">
+                                <div class="form-field checkbox">
+                                    <input  class="form-checkbox" type="checkbox" id="user-agreement" value="agreement">
+                                    <span class="checkbox-icon"></span>
                                     <label for="user-agreement">Соглашаюсь с рассылкой и принимаю
                                         <a class="agreement-link" href="#">Условия договора</a>
                                     </label>
